@@ -1,3 +1,8 @@
+:root {
+  --text-dark: #111111;
+  --text-light: #ffffff;
+}
+
 body {
   margin: 0;
 }
@@ -9,11 +14,23 @@ body {
   align-items: center;
   justify-content: center;
   font-family: monospace;
-  color: #222222;
+  color: var(--text-dark);
 }
 
 .text-white {
-  color: #ffffff;
+  color: var(--text-light);
+}
+
+.contact-link {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  color: var(--text-dark);
+  font-family: monospace;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 @media screen and (min-width: 756px) {
@@ -23,5 +40,10 @@ body {
 
   .color-block {
     min-height: 100dvh;
+  }
+
+  .contact-link {
+    bottom: 1rem;
+    right: 1rem;
   }
 }
