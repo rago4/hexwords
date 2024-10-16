@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+.color-block {
+  flex: 1;
+  min-height: 10dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  color: #222222;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 756px) {
+  .container {
+    display: flex;
+  }
+
+  .color-block {
+    min-height: 100dvh;
+  }
+}
